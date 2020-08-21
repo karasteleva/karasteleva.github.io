@@ -1100,8 +1100,7 @@ textarea:active, textarea:focus {outline: none;}
 
 /*Contact me*/
 .contact__me__title {
-    margin-bottom: 53px;
-    
+
     font-family: 'Lora', serif;
     font-size: 40px;
     font-weight: 500;
@@ -1111,7 +1110,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .contact__me__form {
-    margin: 0 auto 400px;;
+    margin: 70px auto 540px;
     padding: 50px 100px;
     
     width: 590px;
@@ -1141,6 +1140,8 @@ textarea:active, textarea:focus {outline: none;}
 
 .contact__me__form textarea {
     margin-bottom: 48px;
+    position: relative;
+    z-index: 10;
     
     resize: none;
     width: 100%;
@@ -1189,13 +1190,19 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .footer__cover {
-    padding-top: 420px;
-    
     position: absolute;
-    background: #fffbe8 url(img/footer.png) center no-repeat;
-    background-size: cover;
+    background: #fffbe8 url(img/footer.png) center bottom/100% no-repeat;
+    
     width: 100%;
  }
+
+.brushes {
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
 .footer__inner {
     display: flex;
