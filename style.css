@@ -60,13 +60,15 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .nav__link {
-    margin-right: 50px;
+    margin-left: 27px;
     
     text-decoration: none;
     color: inherit;
 }
 
 .nav__button {
+    display: none;
+    
     padding: 16px 28px;
     border: 0;
     
@@ -86,6 +88,10 @@ textarea:active, textarea:focus {outline: none;}
     background-size: cover;
 }
 
+.intro__inner {
+    margin-left: 85px;
+}
+
 .intro__title {
     margin-bottom: 13px;
     
@@ -103,47 +109,61 @@ textarea:active, textarea:focus {outline: none;}
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
-    letter-spacing: inherit;
-}
-
-.intro__bottom {
-    display: flex;
-    justify-content: space-between;
+    letter-spacing: 0.05em;
 }
 
 .intro__button {
-    padding: 20px 28px;
+    padding: 16px 83px;
     border: 0;
     
     background-color: #ffd439;
     
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-size: 27px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
 
-.intro__text {
-    color: #fff;
-    font-size: 27px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.5;
-    letter-spacing: .05em;
+/*SECTION1
+====================*/
+.section1 {
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.section1__rose {
+    position: absolute;
+    
+    right: -30%;
+    top: 25%;
+    z-index: 2;
+}
+
+.section1__blue {
+    position: absolute;
+    
+    left: 1%;
+    bottom: 1%;
+    z-index: 2;
 }
 
 /*INTRODUCTION
 ====================*/
 
 .introduction {
-    padding: 63px 264px 50px;
+    padding: 70px 264px 70px;
     
     background-color: #ffd439;
-    border-bottom: 2px solid #0707a3;
     
     letter-spacing: .05em;
     line-height: 1.5;
+    font-weight: 500;
+    font-size: 27px;
+    
+    position: relative;
+    z-index: 1;
 }
 
 /*questions
@@ -151,178 +171,63 @@ textarea:active, textarea:focus {outline: none;}
 
 .questions {
     
-    background-color: #ffd439;
-    border-top: 200px solid #fff9e5;
+    background-color: #fffae8;
 }
 
 .questions__inner {
-    display: flex;
-    position: relative;
-    
-    justify-content: space-between;
+    padding: 73px 0;
 }
 
-.question {
+.questions__question {
+    padding: 27px 50px 34px;
+    
+    width: 75%;
+    
     border: 2px solid #0707a3;
-    width: 300px;
-    height: 432px;
-    background-color: #fff9e5; 
-    box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
-    z-index: 100;
-}
-
-.q1 {
-    margin-top: -31px;
-}
-
-.q2 {
-    margin-top: -127px;
-}
-
-.q3 {
-    margin-top: -79px;
-}
-
-.question__header {
-    padding-top: 16px;
     
-    text-align: center;
     
+}
+
+.question-2 {
+    margin: 74px 0 74px auto;
+    
+    z-index: 3;
+    position: relative;
+    background-color: #fffae8;
+}
+
+.question-3 {
+    z-index: 3;
+    position: relative;
+    background-color: #fffae8;
+}
+
+.questions__title {
+    margin-left: 32px;
+    
+    font-size: 27px;
+    font-weight: 500;
     font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 1.5;
-
-    letter-spacing: 0.05em;
 }
 
-.question__text {
+.questions__text {
+    margin-top: 28px;
+    
     font-size: 18px;
-    padding: 11px 24px;
-    letter-spacing: 0.05em;
-    line-height: 1.5;
     font-weight: 500;
 }
 
-.question__footer {
-   padding-bottom: 3px;
-}
-
-.question__button {
-    padding: 18px 44px;
-    
-    position: relative;
-    left: 50%;
-    top: -25px;
-    transform: translate(-50%, 0);
-    z-index: 100;
-    
-    border: 2px solid ;
-    
-    background-color: transparent;
-    
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    font-size: 27px;
-    font-weight: 500;
-    color: #0707a3;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.bottle {
-    margin-top: -138px;
-    width: 100%;
-}
-
-/*AUTHOR
+/*didyouknow
 ====================*/
-
-.author {
-    margin-top: -442px;
-    padding-bottom: 50px;
-    position: relative;
-    z-index: 10;
-    
-    background-color: #fff9e5; 
-    
-    border-top: 2px solid #0707a3;
+.didyouknow {
+    background-color: #ffd439;
 }
 
-.author__title {
-    margin-top: 54px;
-    
-    
-    text-align: center;
-    
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 0.02em;
-}
+.didyouknow__title
 
-.author__body {
-    margin: 0 auto;
-    
-    display: flex;
-    justify-content: space-around;
-    max-width: 921px;
-}
+.didyouknow__colums
 
-.author__photo {
-    margin-top: 88px;
-    
-    width: 371px;
-    height: 480px;
-    
-    border: 4px solid #0707a3;
-    background-color: #fff9e5; 
-    box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
-    z-index: 100;
-}
-
-.author__about {
-    margin-top: 137px;
-    padding-top: 15px;
-    
-    width: 368px;
-    height: 454px;
-    
-    border: 4px solid #0707a3;
-    background-color: #fff9e5; 
-    box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
-    z-index: 100;
-    
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 1.5;
-    font-size: 27px;
-    font-weight: 500;
-}
-
-.author__quote {
-    margin-top: 73px;
-    margin-bottom: 50px;
-    padding: 15px 17px 0;
-    
-    width: 629px;
-    height: 240px;
-    
-    border: 4px solid #0707a3;
-    background-color: #fff9e5; 
-    box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
-    z-index: 100;
-    
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 100;
-    
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 1.5;
-    font-size: 27px;
-    font-weight: 500;
-}
+.didyouknow__col
 
 /*BLACK INSERT
 ====================*/
@@ -1185,8 +1090,10 @@ textarea:active, textarea:focus {outline: none;}
 
 .footer {
     
-    background-color: #fffbe8;
+    
     position: relative;
+    
+    background-color: #fffbe8;
 }
 
 .footer__cover {
@@ -1205,6 +1112,8 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .footer__inner {
+    padding-bottom: 40px;
+    
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1213,5 +1122,36 @@ textarea:active, textarea:focus {outline: none;}
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     
+    position: relative;
+}
+
+.footer__social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer__social a {
+    margin: 0 10px;
 }
