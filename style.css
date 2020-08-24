@@ -302,7 +302,7 @@ textarea:active, textarea:focus {outline: none;}
     
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
 
     width: 368px;
     height: 454px;
@@ -372,16 +372,33 @@ textarea:active, textarea:focus {outline: none;}
     padding: 10px 5px;
     
     width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     
     backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.3);
     
     outline: 2px solid #ffd439; 
     outline-offset: 20px;
-    text-align: center;
     
     font-weight: 500;
     font-size: 24px;
+}
+
+.youwillstudy__col:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.youwillstudy__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .youwillstudy__bottom {
@@ -392,6 +409,155 @@ textarea:active, textarea:focus {outline: none;}
     text-align: center;
 }
 
+/*What we wait
+====================*/
+.section2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.whatwewait__spot1 {
+    position: absolute;
+    top: 7%;
+    left: -22%;
+    transform: rotate(-18deg);
+    width: 70%;
+}
+
+.whatwewait__spot2 {
+    position: absolute;
+    bottom: 25%;
+    right: -9%;
+    width: 70%;
+}
+
+.whatwewait {
+    padding: 75px 0 95px;
+    background-color: #e97d3c;
+    text-align: center;
+}
+
+.whatwewait__inner {
+    position: relative;
+    z-index: 10;
+}
+
+.whatwewait__title {
+    padding-bottom: 67px;
+    
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+}
+
+.whatwewait__subtitle {
+    margin-bottom: 72px;
+    
+    font-weight: 500;
+    font-size: 40px;
+    color: #555d52;
+}
+
+.whatwewait__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.whatwewait_section {
+    margin-bottom: 75px;
+    display: flex;
+    width: 31%;
+}
+
+.whatwewait__number {
+    width: 80px;
+    height: 80px;
+    
+    color: #555d52;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.section3 {
+    
+} 
+
+.section4 {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.section5 {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.section6 {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.number1 {
+    border-top: 2px solid #555d52;
+}
+
+.number2 {
+    border-top: 2px solid #555d52;
+}
+
+.number3 {
+    border-top: 2px solid #555d52;
+}
+
+.number4 {
+    border-bottom: 2px solid #555d52;
+}
+
+.number5 {
+    border-bottom: 2px solid #555d52;
+}
+
+.number6 {
+    border-bottom: 2px solid #555d52;
+}
+
+.whatwewait__col {
+    padding: 10px 5px;
+    
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        
+    border: 2px solid #555d52;
+    background-color: #f3dfc6;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.whatwewait__col:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.whatwewait__bottom {
+    margin: 0 auto;
+    padding: 28px 18px;
+    
+    width: 39%;
+    
+    border: 2px solid #555d52;
+    background-color: #f3dfc6;
+    
+    font-weight: 500;
+    font-size: 27px;    
+}
+
 /*BLACK INSERT
 ====================*/
 .black__insert {
@@ -399,6 +565,8 @@ textarea:active, textarea:focus {outline: none;}
     
     background: #000 url(img/black.jpg) center no-repeat;
     background-size: cover;
+
+    
 }
 
 .black__inner {
@@ -408,11 +576,10 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .black__box {
-    padding: 0 12px 0;
+    padding: 42pz 12px 47px;
     
     position: relative;
     width: 29%;
-    min-height: 625px;
     text-align: center;
     backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.3);
@@ -438,90 +605,6 @@ textarea:active, textarea:focus {outline: none;}
     font-size: 18px;
     letter-spacing: 0;
     line-height: 1.5;
-}
-
-.black__button {
-    padding: 13px 25px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    min-width: 160px;
-    
-    border: 0;
-    
-    background-color: #ffd439;
-    
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-/*waiting
-====================*/
-
-.waiting {
-    background-color: #ffd439;
-    padding: 58px 0 227px;
-}
-
-.waiting__title {
-    margin-bottom: 42px;
-    
-    text-align: center;
-    
-    font-size: 60px;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-
-.waiting__inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.waiting__theme {
-    width: 59%;
-}
-
-.waiting__right {
-    width: 39%;    
-}
-
-.waiting__subtitle {
-    margin-bottom: 38px;
-    
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-
-.waiting__text {
-    padding: 12px 13px 3px;
-    
-    border: 2px solid #0707a3;
-    background-color: #fffae8;
-    
-    letter-spacing: 0.03em;
-    line-height: 1.5;
-}
-
-.waiting__text li {
-    list-style: disc;
-    
-    padding-bottom: 15px;
-}
-
-.waiting__experiments {
-    margin: 55px 55px 0 55px;
-    padding: 60px 16px 60px 18px;
-    
-    border: 2px solid #0707a3;
-
-    text-align: center;
-    letter-spacing: 0.01em;
 }
 
 /*OPEN course
