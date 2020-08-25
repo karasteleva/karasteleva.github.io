@@ -50,7 +50,10 @@ textarea:active, textarea:focus {outline: none;}
     
     font-size: 16px;
     color: #fff;
+}
 
+.header__name {
+    letter-spacing: 0;
 }
 
 .header__inner {
@@ -64,6 +67,7 @@ textarea:active, textarea:focus {outline: none;}
     
     text-decoration: none;
     color: inherit;
+    letter-spacing: 0;
 }
 
 .nav__button {
@@ -82,7 +86,7 @@ textarea:active, textarea:focus {outline: none;}
 /*INTRO
 =====================================*/
 .intro {
-    padding: 222px 0 172px;
+    padding: 175px 0 138px;
     
     background: #a08675 url(img/intro.jpg) center no-repeat;
     background-size: cover;
@@ -103,7 +107,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .intro__subtitle {
-    margin-bottom: 44px;
+    margin-bottom: 22px;
     
     font-size: 40px;
     font-weight: 400;
@@ -112,17 +116,31 @@ textarea:active, textarea:focus {outline: none;}
     letter-spacing: 0.05em;
 }
 
+.intro__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
 .intro__button {
-    padding: 16px 83px;
+    padding: 22px 60px;
     border: 0;
     
-    background-color: #ffd439;
+    background-color: #e97d3c;
     
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 27px;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+}
+
+.intro__bottom__right {
+    font-family: 'Lora', serif;
+    font-size: 27;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    line-height: 1.5;
 }
 
 /*SECTION1
@@ -136,7 +154,7 @@ textarea:active, textarea:focus {outline: none;}
 .section1__rose {
     position: absolute;
     
-    width: 75%;
+    width: 80%;
     right: -25%;
     top: 19%;
     z-index: 2;
@@ -144,10 +162,10 @@ textarea:active, textarea:focus {outline: none;}
 
 .section1__blue {
     position: absolute;
-    
-    width: 75%;
-    left: -15%;
-    bottom: 15%;
+
+    width: 95%;
+    left: -32%;
+    bottom: 21%;
     z-index: 2;
 }
 
@@ -155,9 +173,9 @@ textarea:active, textarea:focus {outline: none;}
 ====================*/
 
 .introduction {
-    padding: 70px 264px 70px;
+    padding: 65px 0 72px;
     
-    background-color: #ffd439;
+    background-color: #e97d3c;
     
     letter-spacing: .05em;
     line-height: 1.5;
@@ -168,24 +186,32 @@ textarea:active, textarea:focus {outline: none;}
     z-index: 1;
 }
 
+.introduction__inner {
+    margin: 0 75px;
+}
+
 /*questions
 ====================*/
 
 .questions {
-    background-color: #fffae8;
+    background-color: #f3dfc6;
 }
 
 .questions__inner {
-    padding: 73px 0;
+    padding: 76px 0 76px;
 }
 
 .questions__question {
-    padding: 27px 50px 34px;
+    padding: 18px 20px 20px 50px;
     
     width: 75%;
+    position: relative;
+    z-index: 10;
     
-    border: 2px solid #0707a3;
+    border: 2px solid #555d52;
     box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
+    
+    line-height: 1.5;
 }
 
 .question-2 {
@@ -193,13 +219,13 @@ textarea:active, textarea:focus {outline: none;}
     
     z-index: 3;
     position: relative;
-    background-color: #fffae8;
+    background-color: #f3dfc6;
 }
 
 .question-3 {
     z-index: 3;
     position: relative;
-    background-color: #fffae8;
+    background-color: #f3dfc6;
 }
 
 .questions__title {
@@ -211,7 +237,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .questions__text {
-    margin-top: 28px;
+    margin-top: 20px;
     
     font-size: 18px;
     font-weight: 500;
@@ -220,18 +246,19 @@ textarea:active, textarea:focus {outline: none;}
 /*didyouknow
 ====================*/
 .didyouknow {
-    padding: 164px 0 100px;
+    padding: 76px 0 100px;
     
-    background-color: #ffd439;
+    background-color: #e97d3c;
 }
 
 .didyouknow__title {
     text-align: center;
-    margin-bottom: 95px;
+    margin-bottom: 85px;
     
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 60px;
+    
 }
 
 .didyouknow__colums {
@@ -240,12 +267,12 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .didyouknow__col {
-    padding: 20px;
+    padding: 17px;
     
     width: 31%;
     
-    background-color: #fffae8;
-    border: 2px solid #0707a3;
+    background-color: #f3dfc6;
+    border: 2px solid #555d52;
     
     text-align: center;
     
@@ -254,18 +281,19 @@ textarea:active, textarea:focus {outline: none;}
     
     font-size: 27px;
     font-weight: 500;
-}
+    line-height: 1.5;
+    }
 
 /*AUTHOR
 ====================*/
 
 .author {
 
-    padding: 54px 0 50px;
+    padding: 76px 0 100px;
     position: relative;
     z-index: 10;
 
-    background-color: #fff9e5; 
+    background-color: #f3dfc6; 
 }
 
 .author__title {
@@ -275,22 +303,20 @@ textarea:active, textarea:focus {outline: none;}
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
 }
 
 .author__body {
     margin: 0 auto;
 
     display: flex;
-    justify-content: space-around;
-    max-width: 920px;
+    justify-content: space-evenly;
 }
 
 .author__photo {
-    margin-top: 88px;
+    margin-top: 85px;
 
-    border: 4px solid #0707a3;
-    background-color: #fff9e5; 
+    border: 2px solid #555d52;
+    background-color: #f3dfc6; 
     box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
     z-index: 100;
     
@@ -299,41 +325,40 @@ textarea:active, textarea:focus {outline: none;}
 
 .author__about {
     margin-top: 137px;
+    padding: 30px 30px 30px;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    width: 368px;
-    height: 454px;
-
-    border: 4px solid #0707a3;
-    background-color: #fff9e5; 
+    border: 2px solid #555d52;
+    background-color: #f3dfc6; 
     box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
     z-index: 100;
 
     text-align: center;
     letter-spacing: 0;
-    line-height: 1.5;
+    line-height: 2.3;
     font-size: 27px;
     font-weight: 500;
 }
 
 .author__quote {
-    margin-top: 73px;
+    margin-top: 55px;
    
-    padding: 15px 17px 0;
+    padding: 15px 19px 15px;
 
     width: 63%;
-    height: 240px;
 
-    border: 4px solid #0707a3;
-    background-color: #fff9e5; 
+
+    border: 2px solid #555d52;
+    background-color: #f3dfc6; 
     box-shadow: 7.5px 12.99px 2.85px 0.15px rgba(0, 0, 0, 0.02);
     z-index: 100;
 
     position: relative;
-    left: 7%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
 
     text-align: center;
@@ -346,7 +371,7 @@ textarea:active, textarea:focus {outline: none;}
 /*YOU WILL STUDY
 ====================*/
 .youwillstudy {
-    padding: 70px 0;
+    padding: 76px 100px;
     
     background: url(img/youwillstudy.jpg) center no-repeat;
     background-size: cover;
@@ -356,11 +381,14 @@ textarea:active, textarea:focus {outline: none;}
     font-weight: 400;
     font-size: 60px;
     font-family: 'Lora', serif;
-    color: #fffae8;
+    color: #fff;
     text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
 }
 
 .youwillstudy__flex {
+    margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -368,8 +396,8 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .youwillstudy__col {
-    margin: 50px;
-    padding: 10px 5px;
+    margin: 50px 50px;
+    padding: 10px 10px;
     
     width: 23%;
     display: flex;
@@ -380,11 +408,13 @@ textarea:active, textarea:focus {outline: none;}
     backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.3);
     
-    outline: 2px solid #ffd439; 
+    outline: 2px solid #e97d3c; 
     outline-offset: 20px;
     
     font-weight: 500;
     font-size: 24px;
+    letter-spacing: 0;
+    line-height: 1.5;
 }
 
 .youwillstudy__col:before {
@@ -393,19 +423,12 @@ textarea:active, textarea:focus {outline: none;}
     padding-top: 100%;
 }
 
-.youwillstudy__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 .youwillstudy__bottom {
-    margin: 0 100px;
+    margin: 25px 50px 0px;
     
     font-size: 27px;
-    color: #fffae8;
+    line-height: 1.5;
+    color: #fff;
     text-align: center;
 }
 
@@ -418,8 +441,8 @@ textarea:active, textarea:focus {outline: none;}
 
 .whatwewait__spot1 {
     position: absolute;
-    top: 7%;
-    left: -22%;
+    top: 2.5%;
+    left: -27%;
     transform: rotate(-18deg);
     width: 70%;
 }
@@ -427,12 +450,12 @@ textarea:active, textarea:focus {outline: none;}
 .whatwewait__spot2 {
     position: absolute;
     bottom: 25%;
-    right: -9%;
+    right: -17%;
     width: 70%;
 }
 
 .whatwewait {
-    padding: 75px 0 95px;
+    padding: 76px 0 100px;
     background-color: #e97d3c;
     text-align: center;
 }
@@ -443,7 +466,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .whatwewait__title {
-    padding-bottom: 67px;
+    padding-bottom: 42px;
     
     font-size: 60px;
     font-weight: 500;
@@ -451,14 +474,17 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .whatwewait__subtitle {
-    margin-bottom: 72px;
+    margin-bottom: 61px;
     
     font-weight: 500;
     font-size: 40px;
     color: #555d52;
+    text-transform: uppercase;
 }
 
 .whatwewait__flex {
+    padding-bottom: 20px;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -523,7 +549,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .whatwewait__col {
-    padding: 10px 5px;
+    padding: 10px 20px;
     
     width: 75%;
     display: flex;
@@ -555,13 +581,14 @@ textarea:active, textarea:focus {outline: none;}
     background-color: #f3dfc6;
     
     font-weight: 500;
-    font-size: 27px;    
+    font-size: 27px;  
+    line-height: 1.5;
 }
 
 /*BLACK INSERT
 ====================*/
 .black__insert {
-    padding: 110px 0 126px;
+    padding: 120px 0 168px;
     
     background: #000 url(img/black.jpg) center no-repeat;
     background-size: cover;
@@ -576,24 +603,24 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .black__box {
-    padding: 42pz 12px 47px;
+    padding: 12px 20px 47px;
     
     position: relative;
     width: 29%;
     text-align: center;
     backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     
-    outline: 2px solid #ffd439; 
+    outline: 2px solid #e97d3c; 
     outline-offset: 20px;
 }
 
 .black__pic {
-    margin: 30px 0 5px;
+    margin: 30px 0 20px;
 }
 
 .black__title {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     
     font-family: 'Lora', serif;
     font-size: 27px;
@@ -611,7 +638,7 @@ textarea:active, textarea:focus {outline: none;}
 ===============================*/
 
 .open__course {
-    background-color: #fffae8;
+    background-color: #f3dfc6;
 }
 
 .open__inner {
@@ -622,7 +649,7 @@ textarea:active, textarea:focus {outline: none;}
     top: -72px;
     width: 1000px;
 
-    border: 2px solid #0707a3;
+    border: 2px solid #555d52;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
     
     text-align: center;
@@ -645,8 +672,8 @@ textarea:active, textarea:focus {outline: none;}
     width: 75px;
     height: 75px;
     
-    border-top: 3px solid #0707a3;
-    border-right: 3px solid #0707a3;
+    border-top: 3px solid #555d52;
+    border-right: 3px solid #555d52;
     border-bottom: 0;
     border-left: 0;
     
@@ -656,9 +683,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .curs__rotate {
-    
-
-    transform:  rotate(-45deg);
+    transform: rotate(-45deg);
 
 }
 
@@ -670,18 +695,19 @@ textarea:active, textarea:focus {outline: none;}
     
     position: relative;
     
-    background-color: #fffae8;
+    background-color: #f3dfc6;
     
 }
 
 .week__title {
-    padding: 75px 0 80px;;
+    padding: 0 0 80px;
     
     text-align: center;
     font-weight: 400;
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: 0;
+    font-family: 'Lora', serif;
 }
 
 .week__title2 {
@@ -692,6 +718,7 @@ textarea:active, textarea:focus {outline: none;}
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: 0;
+    font-family: 'Lora', serif;
 }
 
 .lesson {
@@ -715,7 +742,7 @@ textarea:active, textarea:focus {outline: none;}
     min-height: 388px;
     
     
-    border: 2px solid #0707a3;
+    border: 2px solid #555d52;
 }
 
 .lesson__title__inner {
@@ -728,20 +755,23 @@ textarea:active, textarea:focus {outline: none;}
     text-align: center;
     font-size: 40px;
     line-height: 1.5;
+    letter-spacing: 0;
 }
 
 .lesson__text {
-    padding: 31px 20px 0px 58px;
+    padding: 31px 18px 20px 21px;
     
-    border: 2px solid #0707a3;
+    border: 2px solid #555d52;
     width: 59%;
-    background-color: #fffae8;
+    background-color: #f3dfc6;
     
     position: relative;
     z-index: 3;
 }
 
 .lesson__materials {
+    margin: 0 39px 15px;
+    
     font-size: 18px;
     text-transform: uppercase;
     line-height: 1;
@@ -750,14 +780,13 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .materials__list {
-    margin: 15px 0 0px;
+    margin: 0;
     
     list-style: none;
-    
 }
 
 .materials__list li {
-    margin-left: -60px;
+    position: relative;
     
     font-size: 18px;
     line-height: 1.5;
@@ -767,12 +796,12 @@ textarea:active, textarea:focus {outline: none;}
 
 .materials__list li:before {
     content:  "—";
-    position: relative;
-    left:     -5px;
+    position: absolute;
+    left: -25px;
 }
 
 .lesson__exercises {
-    margin-top: 30px;
+    margin: 30px 39px 15px;
     
     font-size: 18px;
     text-transform: uppercase;
@@ -782,13 +811,12 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .exercises__list {
-    margin: 16px 0 29px;
+    margin: 0;
     
     list-style: decimal;
 }
 
 .exercises__list li {
-    margin-left: -39px;
     
     font-size: 18px;
     line-height: 1.5;
@@ -797,7 +825,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .lesson__text p {
-    margin: 17px 0 -15px;
+    margin: 15px 39px 10px;
     
     font-size: 18px;
     line-height: 1.5;
@@ -839,7 +867,7 @@ textarea:active, textarea:focus {outline: none;}
 .offset {
     padding-bottom: 134px;
     
-    background-color: #ffd439;
+    background-color: #e97d3c;
 }
 
 .offset__inner {
@@ -858,7 +886,7 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .offset__text {
-    padding: 10px 160px 63px;
+    padding: 10px 140px 63px;
         
     text-align: center;
     font-size: 27px;
@@ -875,7 +903,7 @@ textarea:active, textarea:focus {outline: none;}
 
 .offset__slider__img {
     height: 200px;
-    border: 2px solid #0707a3;
+    border: 2px solid #555d52;
 }
 
 .offset__slider__img:hover {
@@ -888,7 +916,7 @@ textarea:active, textarea:focus {outline: none;}
 .warning {
     padding: 7px 0 72px;
     
-    background-color: #fffae8;
+    background-color: #f3dfc6;
     
 }
 
@@ -907,7 +935,8 @@ textarea:active, textarea:focus {outline: none;}
 .warning__button {
     padding: 20px 50px;
     
-    background-color: #0707a3;
+    background-color: #e97d3c;
+    border: 0;
     
     cursor: pointer;
     position: relative;
@@ -918,20 +947,20 @@ textarea:active, textarea:focus {outline: none;}
     font-size: 27px;
     text-transform: uppercase;
     line-height: 1;
-    color: #fff;
+    color: #000;
     letter-spacing: .05em;
 }
 
 /*Reviews*/
 
 .reviews {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     
     background: #000 url(img/reviews.jpg)
     center no-repeat;
     background-size: cover;
     
-    color: #fffae8;
+    color: #fff;
 }
 
 .reviews__title {
@@ -941,6 +970,7 @@ textarea:active, textarea:focus {outline: none;}
     text-align: center;
     font-size: 60px;
     letter-spacing: .05em;
+    font-family: 'Lora', serif;
 }
 
 .review {
@@ -960,9 +990,8 @@ textarea:active, textarea:focus {outline: none;}
 .review__photo {
     margin-bottom: 35px;
     
-    outline: 2px solid #ffd439; 
+    outline: 2px solid #e97d3c; 
     outline-offset: 20px;
-    
 }
 
 .review__name {
@@ -990,7 +1019,7 @@ textarea:active, textarea:focus {outline: none;}
 
 
 .review__text__fon {
-    padding: 32px 16px 37px 20px;
+    padding: 26px 14px 32px 40px;
     
     width: 74%;
     max-height: 360px;
@@ -999,11 +1028,13 @@ textarea:active, textarea:focus {outline: none;}
     background-color: rgba(255, 255, 255, 0.3);
     
 
-    outline: 2px solid #ffd439; 
+    outline: 2px solid #e97d3c; 
     outline-offset: 20px;
 }
 
 .review__text {
+    padding-right: 15px;
+    
     height: 100%;
     
     color: #000;
@@ -1026,14 +1057,14 @@ textarea:active, textarea:focus {outline: none;}
     width: 5px;
     height: 5px;
     background-color: transparent;
-    border: 2px solid #ffd439;
+    border: 2px solid #e97d3c;
 }
 
 .review__text::-webkit-scrollbar-thumb {
     width: 5px;
     height: 5px;
     
-    background-color: #ffd439;
+    background-color: #e97d3c;
     border-radius: 3px;
 }
 
@@ -1045,39 +1076,41 @@ textarea:active, textarea:focus {outline: none;}
 =========================================*/
 
 .necessarymaterials {
-    background-color: #ffd439;
-    padding-bottom: 73px;
+    background-color: #e97d3c;
+    padding-bottom: 100px;
 }
 
 .necessarymaterials__halfcircle {
-    padding: 50px 0 45px;
+    padding: 85px 0 87px;
+
     position: relative;
     left: 50%;
-    top: -50px;
+    top: -38px;
     transform: translate(-50%, 0);
     width: 1000px;
 
-    border: 2px solid #0707a3;
+    border: 2px solid #555d52;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
     
     text-align: center;
 }
 
 .necessarymaterials__title {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     
     font-family: 'Lora', serif;
     font-size: 40px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0.05em;
 }
 
 .necessarymaterials__text {
-    padding: 10px 200px;
+    padding: 0 200px;
     
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
+    line-height: 1.5;
 }
 
 .necessarymaterials__list {
@@ -1098,12 +1131,12 @@ textarea:active, textarea:focus {outline: none;}
 }
 
 .necessarymaterial__icon img {
-    height: 50px;
     margin: 0 auto;
 }
 
 .necessarymaterial__text {
-    font-size: 17px;
+    margin-top: 30px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.5;
@@ -1113,8 +1146,8 @@ textarea:active, textarea:focus {outline: none;}
     padding: 33px 50px;
     width: 55%;
     
-    background-color: #fffae8;
-    border: 2px solid #0707a3;
+    background-color: #f3dfc6;
+    border: 2px solid #555d52;
     
     font-size: 18px;
     font-weight: 500;
@@ -1126,10 +1159,10 @@ textarea:active, textarea:focus {outline: none;}
 
 .necessarymaterial__warning:before {
    content: "";
-    background-color: #fffae8;
+    background-color: #f3dfc6;
     
-    border-top: 2px solid #0707a3;
-    border-left: 2px solid #0707a3;
+    border-top: 2px solid #555d52;
+    border-left: 2px solid #555d52;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1144,18 +1177,19 @@ textarea:active, textarea:focus {outline: none;}
 
 .prefooter {
     position: relative;
+    overflow: hidden;
     
-    background-color: #fffae8;
+    background-color: #f3dfc6;
 }
 
 .pandemic {
-    padding: 55px 0 100px;
+    padding: 76px 0 100px;
     position: relative;
     z-index: 10;
 }
 
 .pandemic__title {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     
     font-family: 'Lora', serif;
     font-size: 40px;
@@ -1183,22 +1217,24 @@ textarea:active, textarea:focus {outline: none;}
     margin-bottom: 15px;
 }
 
-/*Pandemic
+/*Timing
 ====================================*/
 .timing {
     margin: 0 auto;
-    padding: 35px 50px 30px;
+    padding: 30px 50px 30px;
     position: relative;
     z-index: 10;
     
     background: transparent;
-    border: 2px solid #0707a3;
+    border: 2px solid #e97d3c;
     width: 59%;
     
     text-align: center;
 }
 
 .timing__title {
+    margin-bottom: 15px;
+    
     font-family: 'Lora', serif;
     font-size: 40px;
     font-weight: 500;
@@ -1211,10 +1247,19 @@ textarea:active, textarea:focus {outline: none;}
     line-height: 1.5;
 }
 
-.timing__note {     
+.timing__note {
+    margin-bottom: 30px;
+    padding: 0 30px 0;
+    
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.timing__price {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 /*Button and Image
@@ -1227,19 +1272,19 @@ textarea:active, textarea:focus {outline: none;}
 
 .prefooter__img {
     position: absolute;
-    top: -571px;
-    right: -158px;
+    top: -795px;
+    right: -581px;
     z-index: 0;
 }
 
 .prefooter__button {
-    margin: 50px 0 90px;
-    padding: 20px 28px;
+    margin: 72px 0 90px;
+    padding: 20px 47px;
     
     
     position: relative;
     z-index: 10;
-    background-color: #0707a3;
+    background-color: #e97d3c;
     border: 0;
     
     letter-spacing: .05em;
@@ -1257,7 +1302,8 @@ textarea:active, textarea:focus {outline: none;}
     font-weight: 500;
     letter-spacing: 0;
     text-align: center;
-    color: #ffd439;
+    color: #000;
+    text-transform: uppercase;
 }
 
 .contact__me__form {
@@ -1265,7 +1311,7 @@ textarea:active, textarea:focus {outline: none;}
     padding: 50px 100px;
     
     width: 590px;
-    background-color: #ffd439;
+    background-color: #e97d3c;
 }
 
 .contact__me__form__title {
@@ -1281,7 +1327,7 @@ textarea:active, textarea:focus {outline: none;}
     
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #0707a3;
+    border-bottom: 2px solid #555d52;
     background-color: transparent;
     
     font-family: 'Montserrat', sans-serif;
@@ -1298,8 +1344,8 @@ textarea:active, textarea:focus {outline: none;}
     width: 100%;
     height: 140px;
     
-    border: 2px solid #0707a3; 
-    background-color: #fffae8;
+    border: 2px solid #555d52; 
+    background-color: #f3dfc6;
     
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -1310,6 +1356,7 @@ textarea:active, textarea:focus {outline: none;}
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
+    color: #000;
 }
 
 .contact__me__form button {    
@@ -1319,32 +1366,34 @@ textarea:active, textarea:focus {outline: none;}
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
- 
-    border: none;
+    z-index: 5;
     
-    background-color: #0707a3;
+    border: 2px solid #555d52;
+    
+    background-color: transparent;
+    
     
     letter-spacing: 0;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
-    color: #fff;
+    color: #555d52;
     font-family: 'Montserrat', sans-serif;
+    
+    cursor: pointer;
 }
 
 /*footer*/
 
 .footer {
-    
-    
     position: relative;
     
-    background-color: #fffbe8;
+    background-color: #f3dfc6;
 }
 
 .footer__cover {
     position: absolute;
-    background: #fffbe8 url(img/footer.png) center bottom/100% no-repeat;
+    background: #f3dfc6 url(img/footer.png) center bottom/100% no-repeat;
     
     width: 100%;
  }
@@ -1355,6 +1404,7 @@ textarea:active, textarea:focus {outline: none;}
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .footer__inner {
@@ -1364,7 +1414,10 @@ textarea:active, textarea:focus {outline: none;}
     justify-content: space-between;
     width: 100%;
     
-    color: #fffae8;
+    position: relative;
+    z-index: 5;
+    
+    color: #fff;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1388,6 +1441,7 @@ textarea:active, textarea:focus {outline: none;}
     justify-content: flex-end;
     
     position: relative;
+    
 }
 
 .footer__social {
@@ -1400,4 +1454,12 @@ textarea:active, textarea:focus {outline: none;}
 
 .footer__social a {
     margin: 0 10px;
+    
+}
+
+.footer__email {
+    margin-bottom: 10px;
+    
+    text-decoration: none;
+    color: #fff;
 }
